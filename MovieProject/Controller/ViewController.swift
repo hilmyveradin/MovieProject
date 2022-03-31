@@ -16,7 +16,7 @@ class ViewController: UIViewController {
   
   private lazy var searchBar: UISearchBar = {
     let txtField = UISearchBar()
-    txtField.placeholder = "Search for A Movie"
+    txtField.placeholder = "Search for A Moveee"
     txtField.showsCancelButton = true
     return txtField
   }()
