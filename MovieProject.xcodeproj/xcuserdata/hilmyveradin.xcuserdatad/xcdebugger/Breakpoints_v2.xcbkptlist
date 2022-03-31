@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7CC30514-804D-46AD-8391-437B9A61CC43"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2AA2480E-E7C4-498D-9919-3C6A1E7664BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieProject/Model/Films.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "Films"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "2AA2480E-E7C4-498D-9919-3C6A1E7664BA - c8008a6921bd3635"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieProject.Films.CodingKeys.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;MovieProject.Films.CodingKeys&gt;"
+                  moduleName = "MovieProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hilmyveradin/Documents/Programming-iOS/Projectan/MovieProject/MovieProject/Model/Films.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "2AA2480E-E7C4-498D-9919-3C6A1E7664BA - 3c511931daa6c0f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieProject.Films.CodingKeys.rawValue.getter : Swift.String"
+                  moduleName = "MovieProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hilmyveradin/Documents/Programming-iOS/Projectan/MovieProject/MovieProject/Model/Films.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
