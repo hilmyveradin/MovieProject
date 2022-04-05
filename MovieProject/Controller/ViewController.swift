@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     searchBar.delegate = self
     
     // Check based on query
-    if URLQuery != nil && isQueryExisist == true {
+    if URLQuery != nil && isQueryExisist {
       // Set table view
       view.addSubview(tableView)
       tableView.anchor(top: searchBar.bottomAnchor, left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingBottom: 100)
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
       tableView.delegate = self
       resetQuery()
       
-    } else if URLQuery != nil && isQueryExisist == false {
+    } else if URLQuery != nil && !isQueryExisist {
       let viewDemo = LoadingView()
       view.addSubview(viewDemo)
       viewDemo.anchor(top: searchBar.bottomAnchor, left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor)
@@ -119,7 +119,7 @@ extension ViewController: UISearchBarDelegate {
   
   func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
     URLQuery = nil
-    viewDidLoad()
+    setupView()
     searchBar.endEditing(true)
   }
   
@@ -134,7 +134,7 @@ extension ViewController {
       .responseDecodable(of: Films.self) { (response) in
         guard let films = response.value else {
 //          print("not exists")
-          self.viewDidLoad()
+          self.setupView()
           self.resetQuery()
           return
         }
@@ -142,7 +142,7 @@ extension ViewController {
         //check films result
         if films.totalResults == 0 {
 //          print(1)
-          self.viewDidLoad()
+          self.setupView()
           
         } else {
 //          print(2)
@@ -151,7 +151,7 @@ extension ViewController {
           DispatchQueue.main.async {
             self.tableView.reloadData()
           }
-          self.viewDidLoad()
+          self.setupView()
         }
         
       }
